@@ -23,7 +23,7 @@ body.light {
 
 body.dark {
   --bg-color: #1e1e2f;
-  --text-color: #e0e0e0;
+  --text-color: #1f1c1c;
   --button-bg: #2a2a40;
   --button-text: #f0f0f0;
   --bg-color-calc: #6c6c70;
@@ -68,6 +68,28 @@ body {
   box-sizing: border-box;
 }
 
+.expression-display {
+  width: 100%;
+  height: 40px;
+  background-color: #eee;
+  border: none;
+  text-align: right;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.expression-label {
+  font-size: 13px;
+  color: #999;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  user-select: none;
+}
+
 button {
   background-color: var(--button-bg);
   color: var(--button-text);
@@ -98,27 +120,21 @@ button:active {
   gap: 10px;
 }
 
-.calculator-keys button {
-  width: 100%;
-  padding: 15px;
-  font-size: 1.2em;
-  border: none;
-  border-radius: 5px;
-  background-color: #e0e0e0;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.calculator-keys button:hover {
-  background-color: #d0d0d0;
-}
-
 .operator {
   background-color: #f79232;
   color: white;
 }
 
 .operator:hover {
+  background-color: #e68121;
+}
+
+.percent {
+  background-color: #f79232;
+  color: white;
+}
+
+.percent:hover {
   background-color: #e68121;
 }
 

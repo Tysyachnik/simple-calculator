@@ -6,14 +6,18 @@
     <title>Simple Calculator</title>
   </head>
   <body>
-    <button id="toggle-theme">
+    <button id="toggle-theme" aria-label="toggle theme">
       <img src="assets/theme-light-dark.svg" alt="Toggle theme" />
     </button>
     <div class="calculator">
+      <div class="expression-container">
+        <small class="expression-label">Expression-display:</small>
+        <div class="expression-display"></div>
+      </div>
       <input type="text" class="display" readonly />
       <div class="buttons">
         <button class="all-clear">AC</button>
-        <button class="operator">%</button>
+        <button class="percent">%</button>
         <button class="operator">/</button>
         <button class="operator">*</button>
         <button class="operator">-</button>
@@ -28,7 +32,6 @@
         <button class="number">1</button>
         <button class="number">2</button>
         <button class="number">3</button>
-
         <button class="equals">=</button>
         <button class="number" id="zero">0</button>
         <button class="toggle-sign">±</button>
