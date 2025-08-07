@@ -73,13 +73,15 @@ function handleToggleSign() {
 function handlePercent() {
   if (currentInput === "") return;
 
+  let preResult;
   let result;
-
+  
   if (previousInput !== "" && operator !== null) {
     let base = parseFloat(previousInput);
     let percent = parseFloat(currentInput);
 
-    result = (base * percent) / 100;
+    preResult = (base * percent) / 100;
+    result = calculate(base, preResult, operator)
   } else {
     let number = parseFloat(currentInput);
     result = number / 100;
