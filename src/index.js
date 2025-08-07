@@ -36,7 +36,6 @@ function handleOperator(newOperator) {
 
     previousInput = result.toString();
     currentInput = "";
-    previousInput = result.toString();
     display.value = previousInput + newOperator;
     currentInput = "";
   } else if (currentInput !== "") {
